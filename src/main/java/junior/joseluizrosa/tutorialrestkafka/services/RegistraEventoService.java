@@ -10,7 +10,7 @@ public class RegistraEventoService {
 
     private final KafkaTemplate<Object, Object> template;
 
-    public <T> void adicionarEvento(String topido, T dados) {
-        template.send(topido, dados);
+    public <T> void adicionarEvento(String topico, T dados) {
+        template.send(topico, dados);
     }
 }
